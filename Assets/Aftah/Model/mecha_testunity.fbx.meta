@@ -18,7 +18,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Spine' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -26,7 +27,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -104,7 +105,217 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: mecha_testunity(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MeshMecha
+      parentName: mecha_testunity(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: RigMecha
+      parentName: mecha_testunity(Clone)
+      position: {x: 0, y: -1.3102844, z: -3.4186184}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Mecha_Root
+      parentName: RigMecha
+      position: {x: 1.3767472e-17, y: -0.0078628, z: 0.06200318}
+      rotation: {x: 0.94982445, y: -0.00000018643392, z: -0.0000005661403, w: 0.31278345}
+      scale: {x: 1, y: 0.99999946, z: 1}
+    - name: Mecha_Leg_01.L
+      parentName: Mecha_Root
+      position: {x: 0.014288735, y: 0.025782801, z: 0.009400267}
+      rotation: {x: -0.7796458, y: -0.20907852, z: -0.50969636, w: -0.29773873}
+      scale: {x: 1.0000045, y: 1.0000019, z: 1.0000029}
+    - name: Mecha_Leg_02.L
+      parentName: Mecha_Leg_01.L
+      position: {x: -5.9604643e-10, y: 0.03181581, z: 0.0000000011523661}
+      rotation: {x: 0.08195888, y: -0.13738641, z: 0.15289138, w: -0.97520864}
+      scale: {x: 1.0000001, y: 1.0000008, z: 1.0000021}
+    - name: Mecha_Leg_03.L
+      parentName: Mecha_Leg_02.L
+      position: {x: 4.2840836e-10, y: 0.018742379, z: 0.0000000049266964}
+      rotation: {x: 0.34513214, y: 0.39087948, z: -0.48183644, w: 0.7042234}
+      scale: {x: 1.0000036, y: 1.0000001, z: 1.0000006}
+    - name: Mecha_Leg_04.L
+      parentName: Mecha_Leg_03.L
+      position: {x: 0.000000003427267, y: 0.03132316, z: 0.0000000035762786}
+      rotation: {x: -0.35009605, y: -0.20146805, z: 0.6476251, w: 0.6460845}
+      scale: {x: 1.0000005, y: 1.0000042, z: 1.0000012}
+    - name: Mecha_Leg_04.L_end
+      parentName: Mecha_Leg_04.L
+      position: {x: -0, y: 0.025575744, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Arm.L
+      parentName: Mecha_Root
+      position: {x: 0.044385675, y: 0.032387227, z: -0.01757505}
+      rotation: {x: 0.6542575, y: 0.44325706, z: 0.5626446, w: 0.24269603}
+      scale: {x: 1.0000018, y: 1.0000018, z: 1.0000007}
+    - name: Mecha_ForeArm.L
+      parentName: Mecha_Arm.L
+      position: {x: 0.0000000016391277, y: 0.033871148, z: 0.00000000838656}
+      rotation: {x: -0.12978505, y: 0.0293191, z: 0.34455135, w: 0.9292904}
+      scale: {x: 0.999999, y: 1.0000014, z: 1.0000005}
+    - name: Mecha_ForeArm.L_end
+      parentName: Mecha_ForeArm.L
+      position: {x: -0, y: 0.042149123, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Leg_01.R
+      parentName: Mecha_Root
+      position: {x: -0.014288711, y: 0.025782801, z: 0.009400302}
+      rotation: {x: -0.7796459, y: 0.20907792, z: 0.50969625, w: -0.29773903}
+      scale: {x: 0.9999969, y: 1.0000015, z: 1.0000006}
+    - name: Mecha_Leg_02.R
+      parentName: Mecha_Leg_01.R
+      position: {x: -0, y: 0.031815812, z: -0.0000000049965454}
+      rotation: {x: -0.081961095, y: -0.137391, z: 0.15289244, w: 0.9752077}
+      scale: {x: 1.0000007, y: 1.0000015, z: 0.99999976}
+    - name: Mecha_Leg_03.R
+      parentName: Mecha_Leg_02.R
+      position: {x: 7.4505804e-11, y: 0.018742416, z: 0.0000000022538005}
+      rotation: {x: 0.34513426, y: -0.39087987, z: 0.4818325, w: 0.704225}
+      scale: {x: 1.0000018, y: 1.0000045, z: 0.9999994}
+    - name: Mecha_Leg_04.R
+      parentName: Mecha_Leg_03.R
+      position: {x: 0.0000000011920929, y: 0.03132322, z: -0.0000000028312206}
+      rotation: {x: 0.35009465, y: -0.201469, z: 0.64762306, w: -0.646087}
+      scale: {x: 0.9999996, y: 0.9999997, z: 1}
+    - name: Mecha_Leg_04.R_end
+      parentName: Mecha_Leg_04.R
+      position: {x: -0, y: 0.025575744, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Arm.R
+      parentName: Mecha_Root
+      position: {x: -0.044385724, y: 0.032387227, z: -0.017574945}
+      rotation: {x: -0.6542567, y: 0.44325644, z: 0.5626456, w: -0.24269703}
+      scale: {x: 1.000001, y: 1.0000015, z: 1.0000011}
+    - name: Mecha_ForeArm.R
+      parentName: Mecha_Arm.R
+      position: {x: -0.00000000461936, y: 0.033871144, z: 0.0000000050524247}
+      rotation: {x: 0.12978438, y: 0.029318776, z: 0.34455132, w: -0.9292905}
+      scale: {x: 0.99999905, y: 1.0000017, z: 1}
+    - name: Mecha_ForeArm.R_end
+      parentName: Mecha_ForeArm.R
+      position: {x: -0, y: 0.042149123, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Spine
+      parentName: Mecha_Root
+      position: {x: 4.5612407e-15, y: 0.02720353, z: 0.0000000011920929}
+      rotation: {x: -0.89763814, y: 0.00000026269797, z: 0.0000005350356, w: 0.44073325}
+      scale: {x: 1, y: 1.0000013, z: 1.0000012}
+    - name: Mecha_HeadCamera
+      parentName: Mecha_Spine
+      position: {x: 2.5072176e-21, y: 0.03590704, z: -0.0000000016391277}
+      rotation: {x: -0.13795322, y: 0.00000011806992, z: -0.00000001644527, w: 0.99043876}
+      scale: {x: 1, y: 1.0000006, z: 1.0000001}
+    - name: Mecha_HeadCamera_end
+      parentName: Mecha_HeadCamera
+      position: {x: -0, y: 0.00518577, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Heel_IK.L
+      parentName: RigMecha
+      position: {x: 0.039566934, y: -0.02902306, z: 0.009244862}
+      rotation: {x: -0.0000030555843, y: -0.009735882, z: 0.9999527, w: 0.000000029768785}
+      scale: {x: 1.000003, y: 1.0000012, z: 0.999684}
+    - name: Mecha_Foot.L
+      parentName: Mecha_Heel_IK.L
+      position: {x: 0.000000035424158, y: 0.00000007951483, z: -0.00000004705538}
+      rotation: {x: -0.6057366, y: -0.21275553, z: 0.7319377, w: 0.22822233}
+      scale: {x: 0.9999999, y: 1.0000006, z: 0.9999988}
+    - name: Mecha_Foot.L_end
+      parentName: Mecha_Foot.L
+      position: {x: -0, y: 0.014995126, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Knee_IK.L
+      parentName: RigMecha
+      position: {x: 0.028331187, y: 0.02168795, z: 0.038461592}
+      rotation: {x: -0.002183348, y: -0, z: -0, w: 0.9999976}
+      scale: {x: 1, y: 0.9999996, z: 0.99999964}
+    - name: Mecha_Knee_IK.L_end
+      parentName: Mecha_Knee_IK.L
+      position: {x: -0, y: 0.02291424, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Elbow_IK.L
+      parentName: RigMecha
+      position: {x: 0.054780822, y: -0.06403417, z: 0.06329607}
+      rotation: {x: -6.123234e-17, y: -0, z: 1, w: -3.3087225e-24}
+      scale: {x: 1, y: 0.9999987, z: 0.9999987}
+    - name: Mecha_Elbow_IK.L_end
+      parentName: Mecha_Elbow_IK.L
+      position: {x: -0, y: 0.023861026, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Hand_IK.L
+      parentName: RigMecha
+      position: {x: 0.056059502, y: -0.002207222, z: 0.028925864}
+      rotation: {x: -6.123234e-17, y: -0, z: 1, w: -3.3087225e-24}
+      scale: {x: 1, y: 0.9999987, z: 0.9999987}
+    - name: Mecha_Hand_IK.L_end
+      parentName: Mecha_Hand_IK.L
+      position: {x: -0, y: 0.024068514, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Heel_IK.R
+      parentName: RigMecha
+      position: {x: -0.039566934, y: -0.02902306, z: 0.009244862}
+      rotation: {x: 0.0000030555843, y: -0.009735882, z: 0.9999527, w: -0.000000029768785}
+      scale: {x: 1.000003, y: 1.0000012, z: 0.999684}
+    - name: Mecha_Foot.R
+      parentName: Mecha_Heel_IK.R
+      position: {x: 0.000000031333652, y: -0.000000027382372, z: 0.00000005345255}
+      rotation: {x: 0.6057366, y: -0.21275553, z: 0.7319377, w: -0.22822233}
+      scale: {x: 0.9999999, y: 1.0000006, z: 0.9999988}
+    - name: Mecha_Foot.R_end
+      parentName: Mecha_Foot.R
+      position: {x: -0, y: 0.014995126, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Knee_IK.R
+      parentName: RigMecha
+      position: {x: -0.028331187, y: 0.02168795, z: 0.038461592}
+      rotation: {x: -0.002183348, y: -0, z: -0, w: 0.9999976}
+      scale: {x: 1, y: 0.9999996, z: 0.99999964}
+    - name: Mecha_Knee_IK.R_end
+      parentName: Mecha_Knee_IK.R
+      position: {x: -0, y: 0.02291424, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Elbow_IK.R
+      parentName: RigMecha
+      position: {x: -0.054780822, y: -0.06403417, z: 0.06329607}
+      rotation: {x: -6.123234e-17, y: -0, z: 1, w: -3.3087225e-24}
+      scale: {x: 1, y: 0.9999987, z: 0.9999987}
+    - name: Mecha_Elbow_IK.R_end
+      parentName: Mecha_Elbow_IK.R
+      position: {x: -0, y: 0.023861026, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mecha_Hand_IK.R
+      parentName: RigMecha
+      position: {x: -0.056059502, y: -0.002207222, z: 0.028925864}
+      rotation: {x: -6.123234e-17, y: -0, z: 1, w: -3.3087225e-24}
+      scale: {x: 1, y: 0.9999987, z: 0.9999987}
+    - name: Mecha_Hand_IK.R_end
+      parentName: Mecha_Hand_IK.R
+      position: {x: -0, y: 0.024068514, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MeshMecha_Cockpit
+      parentName: mecha_testunity(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -115,7 +326,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
